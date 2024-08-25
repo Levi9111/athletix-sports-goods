@@ -1,11 +1,15 @@
-import { Button } from "./components/ui/button"
+import { Outlet } from 'react-router-dom';
+import Navbar from './layout/Navbar';
+import Footer from './layout/Footer';
 
 function App() {
   return (
     <div>
-      <Button variant='default' size='default'>Add me</Button>
+      <Navbar />
+      <Outlet />
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
